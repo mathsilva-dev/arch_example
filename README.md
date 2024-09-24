@@ -1,16 +1,15 @@
-# arch_example
+## Architecture
 
-A new Flutter project.
+The applied architecture is a clean architecture that works with layers, where the external layers know the internal layers, but the internals don't know the externals.
 
-## Getting Started
+The project is divided into the following layers:
+* **UI**: Contains the user interface, components.
+* **Domain**: Contains the business logic, entities, usecases, repositories and services (only interfaces).
+* **External**: Contains the data access logic, repositories and services (implementations).
 
-This project is a starting point for a Flutter application.
+![Image](assets/vendo_arch_1.png)
+![Image](assets/vendo_arch_2.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Good Practices and Patterns
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This project applies good programming practices and familiar patterns, such as SOLID principles, repository pattern, etc.
