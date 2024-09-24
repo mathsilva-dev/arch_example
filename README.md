@@ -7,6 +7,8 @@ The project is divided into the following layers:
 * **Domain**: Contains the business logic, entities, usecases, repositories and services (only interfaces).
 * **External**: Contains the data access logic, repositories and services (implementations).
 
+The UI layer communicates with the Domain layer, and the Domain layer communicates with the External layer.
+
 ![Image](assets/vendo_arch_1.png)
 ![Image](assets/vendo_arch_2.png)
 
